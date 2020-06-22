@@ -1,0 +1,20 @@
+server:
+  port: 9900
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dafei-nb/config.git
+          username: 1136153732@qq.com
+          password: wmxrnl*999
+          basedir: F:\qf\config
+eureka:
+  instance:
+    hostname: test
+  client:
+    service-url:
+      #指定要去注册的地址
+      defaultZone: http://e1:8000/eureka
